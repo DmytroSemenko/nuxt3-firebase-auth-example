@@ -11,6 +11,7 @@
   "devDependencies": {
     "@element-plus/nuxt": "^1.0.4",
     "@types/node": "^18",
-    "nuxt": "^3.4.3"
+    "nuxt": "^3.4.3",
+    "nuxt-font-loader": "^2.3.1"
   }
 }
