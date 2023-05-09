@@ -7,7 +7,7 @@
   >
     <el-menu-item index="/">FANITTY</el-menu-item>
     <div class="flex-grow" />
-    <el-menu-item index="/login">Sign In</el-menu-item>
+    <el-menu-item index="/signin">Sign In</el-menu-item>
   </el-menu>
   <NuxtPage />
   </div>
