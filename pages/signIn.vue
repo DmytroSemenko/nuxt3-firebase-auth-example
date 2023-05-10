@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>Login</h1>
+        <h1>Sign In</h1>
         <el-input v-model="signForm.email" type="Email" placeholder="Email" clearable />
         <el-input v-model="signForm.password" type="password" placeholder="Please input password" show-password />
     </div>
@@ -8,8 +8,7 @@
 
 <script lang="ts" setup>
 
-let signForm = reactive( 
-{
+let signForm = reactive({
     email: "",
     password: ""
 })

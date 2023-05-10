@@ -1,8 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
-        '@element-plus/nuxt', 
-        'nuxt-font-loader'
+        '@element-plus/nuxt',
+        'nuxt-font-loader',
+        'nuxt-icon'
     ],
     fontLoader: {
         local: [
