@@ -4,14 +4,14 @@
         <el-input v-model="signForm.email" type="Email" placeholder="Email" clearable />
         <el-input v-model="signForm.password" type="password" placeholder="Please input password" show-password />
         <el-button type="primary" @click="signInWithGoogle">Sign up</el-button>
-        <h1>{{ user?.displayName }}</h1>
+        <h5>{{ user }}</h5>
     </div>
 </template>
 
 <script lang="ts" setup>
-const { signInWithGoogle, user } = useFirebaseAuth() 
+const { signInWithGoogle ,user } = useFirebaseAuth() 
 
-let signForm = reactive({
+const signForm = reactive({
     email: "",
     password: ""
 })

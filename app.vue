@@ -2,7 +2,7 @@
     <div>
     <el-menu mode="horizontal" :ellipsis="false">
 
-      <el-button plain @click="isCollapseUpdate"><Icon name="charm:menu-hamburger" size="30"/></el-button>
+      <el-button text plain @click="isCollapseUpdate"><Icon name="charm:menu-hamburger" size="30"/></el-button>
 
       <NuxtLink to="/">
         <Icon name="logos:airbnb" size="50"/>
@@ -11,7 +11,7 @@
       <el-input
       v-model="input1"
       class="w-50 m-2"
-      size="large"
+      size="small"
       placeholder="Search"
     >
     <template #prefix>
@@ -39,15 +39,15 @@
   >
     <el-menu-item index="1">
       <Icon name="fluent-emoji:house" size="24"/>
-      <template #title>Home</template>
+      <template #title><div class="menu-text">Home</div></template>
     </el-menu-item>
     <el-menu-item index="2">
       <Icon name="fluent-emoji:newspaper" size="24"/>
-      <template #title>Feed</template>
+      <template #title><div class="menu-text">Feed</div></template>
     </el-menu-item>
     <el-menu-item index="3">
       <Icon name="fluent-emoji:eyes" size="24"/>
-      <template #title>Subsribtions</template>
+      <template #title><div class="menu-text">Subscriptions</div></template>
     </el-menu-item>
   </el-menu>
 
@@ -88,6 +88,10 @@ const isCollapseUpdate = () => {
   .el-menu-vertical-demo:not(.el-menu--collapse) {
   width: 200px;
   min-height: 400px;
+}
+
+.menu-text{
+  padding-left: 10px;
 }
 
 </style>
