@@ -1,15 +1,15 @@
 <template>
   <div>
     <NaiveConfig :theme-config="themeConfig">
-      <Navbar v-if="user" />
-      <NavbarNoAuth v-if="!user" />
+      <Navbar class="navbar" v-if="user" />
+      <NavbarNoAuth class="navbar" v-if="!user" />
       <NuxtPage />
     </NaiveConfig>
   </div>
 </template>
 
 <script lang="ts" setup>
-import { ThemeConfig} from "@bg-dev/nuxt-naiveui"
+import { ThemeConfig } from "@bg-dev/nuxt-naiveui"
 
 const { user } = useFirebaseAuth()
 
@@ -37,3 +37,11 @@ const { colorModePreference } = useNaiveColorMode()
 colorModePreference.value = "system";
 
 </script>
+
+<style scoped>
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+</style>

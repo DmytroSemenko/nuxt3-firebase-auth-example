@@ -7,7 +7,7 @@
                         <h1>FANITTY</h1>
   </n-gradient-text>
                 </NuxtLink>
-                <n-input-group>
+                <n-input-group v-if="!isMobileOrTablet">
               <n-input round style="min-width: 80px; max-width: 300px;" placeholder="Пошук"/>
               <n-button tertiary circle type="primary">
               <template #icon>
@@ -17,7 +17,7 @@
             </n-input-group>
             </template>
             <template #end>
-                <n-button round @click="navigateTo('/signin')">
+                <n-button round v-if="!isMobileOrTablet" @click="navigateTo('/signin')">
               Зареєструватись
           </n-button>
             <n-button type="primary" round @click="navigateTo('/signin')">
@@ -38,5 +38,7 @@
 </template>
 
 <script lang="ts" setup>
+
+const { isMobileOrTablet } = useNaiveDevice()
 
 </script>
