@@ -4,25 +4,8 @@ import { Style } from "./.nuxt/components";
 export default defineNuxtConfig({
     modules: [
         '@bg-dev/nuxt-naiveui',
-        'nuxt-font-loader',
         'nuxt-icon'
     ],
-    fontLoader: {
-        local: [
-          {
-            src: '/fonts/FixelText-Regular.woff2',
-            family: 'FixelText-Regular',
-            class: 'mac-paw-fixel'
-          }
-        ]
-    },
-    app: {
-        head: {
-            htmlAttrs: {
-                class: 'dark mac-paw-fixel'
-            }
-        }
-    },
     css: [
         'normalize.css/normalize.css'
     ],
