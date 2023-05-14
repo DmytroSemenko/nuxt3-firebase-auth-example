@@ -1,9 +1,9 @@
 <template>
     <div>
         <h1>Sign In</h1>
-        <el-input v-model="signForm.email" type="Email" placeholder="Email" clearable />
-        <el-input v-model="signForm.password" type="password" placeholder="Please input password" show-password />
-        <el-button type="primary" @click="signInWithGoogle">Sign up</el-button>
+        <input v-model="signForm.email" type="Email" placeholder="Email" clearable />
+        <input v-model="signForm.password" type="password" placeholder="Please input password" show-password />
+        <button @click="signInWithGoogle">Sign up</button>
         <h5>{{ user }}</h5>
     </div>
 </template>

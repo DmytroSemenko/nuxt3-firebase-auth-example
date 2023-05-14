@@ -1,7 +1,9 @@
+import { Style } from "./.nuxt/components";
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
     modules: [
-        '@element-plus/nuxt',
+        '@bg-dev/nuxt-naiveui',
         'nuxt-font-loader',
         'nuxt-icon'
     ],
@@ -21,8 +23,9 @@ export default defineNuxtConfig({
             }
         }
     },
-    css: ["element-plus/theme-chalk/dark/css-vars.css"],
-
+    css: [
+        'normalize.css/normalize.css'
+    ],
     runtimeConfig: {
         public: {
             FB_API_KEY: process.env.FB_API_KEY,
