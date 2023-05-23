@@ -14,10 +14,10 @@ export default defineNuxtPlugin(nuxtApp => {
         measurementId: config.public.FB_MEASUREMENT_ID
     };
 
-    const app = initializeApp(firebaseConfig)
+    const app = initializeApp(firebaseConfig);
 
-    const auth = getAuth(app)
+    const auth = getAuth(app);
 
-    nuxtApp.vueApp.provide('auth', auth)
-    nuxtApp.provide('auth', auth)
+    nuxtApp.vueApp.provide('auth', auth);
+    nuxtApp.provide('auth', auth);
 })
